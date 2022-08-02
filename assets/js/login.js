@@ -29,7 +29,8 @@ form.verify({
   pass: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格']
 });
 
-$('#form_reg').on('submit', function (e) {
+$('#form_reg').on('click', function (e) {
+  console.log(1);
   // 阻止默认提交行为
   e.preventDefault();
   // 获取表单全部属性
